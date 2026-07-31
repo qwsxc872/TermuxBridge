@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:theme="@style/AppTheme"
+        android:label="TermuxBridge">
+
+        <service
+            android:name=".BridgeService"
+            android:exported="true">
+            
+            <intent-filter>
+                <action android:name="com.example.bridge.COMMAND"/>
+            </intent-filter>
+
+        </service>
+
+    </application>
+
+</manifest>
